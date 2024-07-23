@@ -1,0 +1,115 @@
+
+.lists-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #c64b4b;
+  }
+  
+  .description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .lists-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-name {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .list-info {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .list-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .list-image {
+    max-height: 100px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .action-btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #ed70ab;
+    color: white;
+  }
+  
+  .action-btn i {
+    margin-right: 5px;
+  }
+  
+  .no-lists-message {
+    text-align: center;
+    font-size: 1em;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .list-images {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .list-image {
+      max-width: 100%;
+    }
+    
+    .list-actions {
+      flex-direction: column;
+    }
+  
+    .action-btn {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+  

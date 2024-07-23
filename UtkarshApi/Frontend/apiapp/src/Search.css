@@ -1,0 +1,103 @@
+/* Search.css */
+
+.search-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 2.2em;
+  color: #212529;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.1em;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 80%;
+  padding: 12px;
+  font-size: 1.1em;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-btn, .save-btn {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  color: white;
+}
+
+.search-btn {
+  background-color: #007bff;
+}
+
+.save-btn {
+  background-color: #28a745;
+}
+
+.search-btn i, .save-btn i {
+  margin-right: 8px;
+}
+
+.search-btn:hover, .save-btn:hover {
+  transform: scale(1.05);
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.result-image {
+  max-height: 160px;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.no-images-message {
+  text-align: center;
+  font-size: 1.1em;
+  color: #868e96;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-input {
+    width: 100%;
+  }
+  
+  .search-form {
+    gap: 20px;
+  }
+  
+  .search-btn, .save-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+  }
+}
